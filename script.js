@@ -23,8 +23,8 @@ IE:
 // removeByIndicies(['a', 'b', 'c'], [0, 2]) => ['a', 'c']
 */
 
-arrayOne = ['a', 'b', 'c']
-extract = [0, 2]
+arrayOne = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+extract = [0, 2, 4, 6, 8]
 
 function removeIndicies(array, extract) {
   let newArray = []
@@ -83,4 +83,4 @@ function fizzBuzz(range) {
   }
 }
 
-fizzBuzz(100)
+fizzBuzz(101)
