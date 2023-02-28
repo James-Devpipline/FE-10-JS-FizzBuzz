@@ -28,9 +28,11 @@ extract = [0, 2]
 
 function removeIndicies(array, extract) {
   let newArray = []
-  for (u of array) {
-    if (u == extract) {
-      newArray.push(u)
+  for (u of extract) {
+    for (p of array) {
+      if (u == array) {
+        newArray.push(u)
+      }
     }
   }
   console.log(newArray)
@@ -65,44 +67,22 @@ Values that are divisible by 5 should log as "Buzz"
 Values that are both divisible by 3 and 5 should log as "FizzBuzz".
 */
 
-// function FizzBuzz(end) {
-//   let fizz = 1
-//   while (fizz < end){
-//     if (fizz % 3 == 0 || fizz % 5 == 0){
-//       console.log("FizzBuzz")
-//     }
-
-//     else if (fizz % 3 == 0 || fizz % 5 != 0) {
-//       console.log("Fizz")
-//     }
-
-//     else if (fizz % 5 == 0 || fizz % 3 != 0) {
-//       console.log("Buzz")
-//     }
-
-//     else {
-//       console.log(fizz)
-//     }
-
-//     fizz++
-//   }
-// }
-// FizzBuzz(50)
-
-for (let fizz = 1; fizz < 101; fizz++) {
-  if (fizz % 15 == 0) {
-    console.log("FizzBuzz")
-  }
-
-  else if (fizz % 3 == 0) {
-    console.log("Fizz")
-  }
-
-  else if (fizz % 5 == 0) {
-    console.log("Buzz")
-  }
-
-  else {
-    console.log(fizz)
+function fizzBuzz() {
+  for (let fizz = 1; fizz < 101; fizz++) {
+    if (fizz % 15 == 0) {
+      console.log("FizzBuzz")
+    }
+  
+    else if (fizz % 3 == 0) {
+      console.log("Fizz")
+    }
+  
+    else if (fizz % 5 == 0) {
+      console.log("Buzz")
+    }
+  
+    else {
+      console.log(fizz)
+    }
   }
 }
