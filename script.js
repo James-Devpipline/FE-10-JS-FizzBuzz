@@ -6,7 +6,7 @@ Challenges:
 */
 
 
-e = 0
+const e = 0
 function twoCount() {
   while (e <= 10) {
     console.log(e)
@@ -23,8 +23,8 @@ IE:
 // removeByIndicies(['a', 'b', 'c'], [0, 2]) => ['a', 'c']
 */
 
-arrayOne = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-extract = [0, 2, 4, 6, 8]
+const arrayOne = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+const extract = [0, 2, 4, 6, 8]
 
 function removeIndicies(array, extract) {
   let newArray = []
