@@ -29,11 +29,7 @@ extract = [0, 2]
 function removeIndicies(array, extract) {
   let newArray = []
   for (u of extract) {
-    for (p of array) {
-      if (u == array) {
-        newArray.push(u)
-      }
-    }
+    newArray.push(array[u])
   }
   console.log(newArray)
 }
@@ -67,8 +63,8 @@ Values that are divisible by 5 should log as "Buzz"
 Values that are both divisible by 3 and 5 should log as "FizzBuzz".
 */
 
-function fizzBuzz() {
-  for (let fizz = 1; fizz < 101; fizz++) {
+function fizzBuzz(range) {
+  for (let fizz = 1; fizz < range; fizz++) {
     if (fizz % 15 == 0) {
       console.log("FizzBuzz")
     }
@@ -86,3 +82,5 @@ function fizzBuzz() {
     }
   }
 }
+
+fizzBuzz(100)
