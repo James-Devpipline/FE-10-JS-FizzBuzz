@@ -6,7 +6,7 @@ Challenges:
 */
 
 
-const e = 0
+let e = 0
 function twoCount() {
   while (e <= 10) {
     console.log(e)
